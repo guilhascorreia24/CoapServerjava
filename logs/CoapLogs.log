@@ -1,0 +1,53 @@
+2023-10-09 11:12:13,188 1263 INFO  c.a.c.CoapserverApplication - Starting CoapserverApplication using Java 19.0.2 with PID 21376 (C:\Users\a892703\OneDrive - Atos\Documentos\GitHub\AKOCoapServer\target\classes started by a892703 in C:\Users\a892703\OneDrive - Atos\Documentos\GitHub\AKOCoapServer)
+2023-10-09 11:12:13,195 1270 INFO  c.a.c.CoapserverApplication - The following 1 profile is active: "prod"
+2023-10-09 11:12:14,175 2250 INFO  o.e.c.elements.config.Configuration - loading properties from file C:\Users\a892703\OneDrive - Atos\Documentos\GitHub\AKOCoapServer\Californium3.properties
+2023-10-09 11:12:14,200 2275 INFO  o.e.c.elements.config.Configuration - defaults added COAP.
+2023-10-09 11:12:14,206 2281 INFO  o.e.c.elements.config.Configuration - defaults added UDP.
+2023-10-09 11:12:14,250 2325 INFO  o.e.c.c.n.RandomTokenGenerator - using tokens of 8 bytes in length
+2023-10-09 11:12:14,273 2348 INFO  org.eclipse.californium.ban - Started.
+2023-10-09 11:12:14,274 2349 INFO  o.e.c.core.network.CoapEndpoint - coap CoapEndpoint uses udp context
+2023-10-09 11:12:14,287 2362 INFO  o.e.c.elements.config.Configuration - defaults added SYS.
+2023-10-09 11:12:14,287 2362 INFO  o.e.c.c.n.stack.BlockwiseLayer - coap BlockwiseLayer uses MAX_MESSAGE_SIZE=1024, PREFERRED_BLOCK_SIZE=512, BLOCKWISE_STATUS_LIFETIME=300000, MAX_RESOURCE_BODY_SIZE=8192, BLOCKWISE_STRICT_BLOCK2_OPTION=false
+2023-10-09 11:12:14,295 2370 INFO  o.e.californium.core.CoapServer - Starting server
+2023-10-09 11:12:14,310 2385 INFO  o.e.c.elements.UDPConnector - UDPConnector starts up 1 sender threads and 1 receiver threads
+2023-10-09 11:12:14,313 2388 INFO  o.e.c.elements.UDPConnector - UDPConnector listening on /[0:0:0:0:0:0:0:0]:5683, recv buf = 65536, send buf = 65536, recv packet size = 2048
+2023-10-09 11:12:14,314 2389 INFO  o.e.c.core.network.CoapEndpoint - coap Started endpoint at coap://[0:0:0:0:0:0:0:0]:5683
+2023-10-09 11:12:14,519 2594 INFO  c.a.c.CoapserverApplication - Started CoapserverApplication in 1.971 seconds (process running for 3.076)
+2023-10-09 11:12:39,390 27465 INFO  o.e.c.c.s.ServerMessageDeliverer - did not find resource /213123123123/conf requested by 127.0.0.1:62954
+2023-10-09 12:26:22,638 1332 INFO  c.a.c.CoapserverApplication - Starting CoapserverApplication using Java 19.0.2 with PID 12792 (C:\Users\a892703\OneDrive - Atos\Documentos\GitHub\AKOCoapServer\target\classes started by a892703 in C:\Users\a892703\OneDrive - Atos\Documentos\GitHub\AKOCoapServer)
+2023-10-09 12:26:22,640 1334 INFO  c.a.c.CoapserverApplication - The following 1 profile is active: "prod"
+2023-10-09 12:26:23,495 2189 INFO  o.e.c.elements.config.Configuration - loading properties from file C:\Users\a892703\OneDrive - Atos\Documentos\GitHub\AKOCoapServer\Californium3.properties
+2023-10-09 12:26:23,517 2211 INFO  o.e.c.elements.config.Configuration - defaults added COAP.
+2023-10-09 12:26:23,525 2219 INFO  o.e.c.elements.config.Configuration - defaults added UDP.
+2023-10-09 12:26:23,571 2265 INFO  o.e.c.c.n.RandomTokenGenerator - using tokens of 8 bytes in length
+2023-10-09 12:26:23,591 2285 INFO  org.eclipse.californium.ban - Started.
+2023-10-09 12:26:23,593 2287 INFO  o.e.c.core.network.CoapEndpoint - coap CoapEndpoint uses udp context
+2023-10-09 12:26:23,606 2300 INFO  o.e.c.elements.config.Configuration - defaults added SYS.
+2023-10-09 12:26:23,607 2301 INFO  o.e.c.c.n.stack.BlockwiseLayer - coap BlockwiseLayer uses MAX_MESSAGE_SIZE=1024, PREFERRED_BLOCK_SIZE=512, BLOCKWISE_STATUS_LIFETIME=300000, MAX_RESOURCE_BODY_SIZE=8192, BLOCKWISE_STRICT_BLOCK2_OPTION=false
+2023-10-09 12:26:23,615 2309 INFO  o.e.californium.core.CoapServer - Starting server
+2023-10-09 12:26:23,628 2322 INFO  o.e.c.elements.UDPConnector - UDPConnector starts up 1 sender threads and 1 receiver threads
+2023-10-09 12:26:23,630 2324 INFO  o.e.c.elements.UDPConnector - UDPConnector listening on /[0:0:0:0:0:0:0:0]:5683, recv buf = 65536, send buf = 65536, recv packet size = 2048
+2023-10-09 12:26:23,630 2324 INFO  o.e.c.core.network.CoapEndpoint - coap Started endpoint at coap://[0:0:0:0:0:0:0:0]:5683
+2023-10-09 12:26:23,865 2559 INFO  c.a.c.CoapserverApplication - Started CoapserverApplication in 1.957 seconds (process running for 2.982)
+2023-10-09 12:42:09,203 947897 INFO  c.atos.coapserver.resources.Device - handleGET ROOT getRequest : CON-GET    MID=19153, Token=4C5B948E512EED63, OptionSet={"Uri-Host":"localhost"}, <empty data>
+2023-10-09 12:45:34,855 1153549 INFO  c.atos.coapserver.resources.Device - handleGET ROOT getRequest : CON-GET    MID=54909, Token=10F334F10CAF6E5C, OptionSet={"Uri-Host":"localhost"}, <empty data>
+2023-10-09 12:45:43,765 835  INFO  c.a.c.CoapserverApplication - Starting CoapserverApplication using Java 19.0.2 with PID 1040 (C:\Users\a892703\OneDrive - Atos\Documentos\GitHub\AKOCoapServer\target\classes started by a892703 in C:\Users\a892703\OneDrive - Atos\Documentos\GitHub\AKOCoapServer)
+2023-10-09 12:45:43,768 838  INFO  c.a.c.CoapserverApplication - The following 1 profile is active: "prod"
+2023-10-09 12:45:44,471 1541 INFO  o.e.c.elements.config.Configuration - loading properties from file C:\Users\a892703\OneDrive - Atos\Documentos\GitHub\AKOCoapServer\Californium3.properties
+2023-10-09 12:45:44,489 1559 INFO  o.e.c.elements.config.Configuration - defaults added COAP.
+2023-10-09 12:45:44,495 1565 INFO  o.e.c.elements.config.Configuration - defaults added UDP.
+2023-10-09 12:45:44,548 1618 INFO  o.e.c.c.n.RandomTokenGenerator - using tokens of 8 bytes in length
+2023-10-09 12:45:44,571 1641 INFO  org.eclipse.californium.ban - Started.
+2023-10-09 12:45:44,572 1642 INFO  o.e.c.core.network.CoapEndpoint - coap CoapEndpoint uses udp context
+2023-10-09 12:45:44,585 1655 INFO  o.e.c.elements.config.Configuration - defaults added SYS.
+2023-10-09 12:45:44,585 1655 INFO  o.e.c.c.n.stack.BlockwiseLayer - coap BlockwiseLayer uses MAX_MESSAGE_SIZE=1024, PREFERRED_BLOCK_SIZE=512, BLOCKWISE_STATUS_LIFETIME=300000, MAX_RESOURCE_BODY_SIZE=8192, BLOCKWISE_STRICT_BLOCK2_OPTION=false
+2023-10-09 12:45:44,592 1662 INFO  o.e.californium.core.CoapServer - Starting server
+2023-10-09 12:45:44,605 1675 INFO  o.e.c.elements.UDPConnector - UDPConnector starts up 1 sender threads and 1 receiver threads
+2023-10-09 12:45:44,608 1678 INFO  o.e.c.elements.UDPConnector - UDPConnector listening on /[0:0:0:0:0:0:0:0]:5683, recv buf = 65536, send buf = 65536, recv packet size = 2048
+2023-10-09 12:45:44,609 1679 INFO  o.e.c.core.network.CoapEndpoint - coap Started endpoint at coap://[0:0:0:0:0:0:0:0]:5683
+2023-10-09 12:45:44,818 1888 INFO  c.a.c.CoapserverApplication - Started CoapserverApplication in 1.536 seconds (process running for 2.114)
+2023-10-09 12:45:50,393 7463 INFO  c.atos.coapserver.resources.Device - handleGET ROOT getRequest : CON-GET    MID=39500, Token=783B2EA1AB33B2FD, OptionSet={"Uri-Host":"localhost"}, <empty data>
+2023-10-09 12:45:50,577 7647 INFO  c.atos.coapserver.resources.Device - handlePost wildcard getRequest: CON-POST   MID=39501, Token=A8CC0F139A359047, OptionSet={"Uri-Host":"localhost", "Uri-Path":"data", "Content-Format":"application/cbor"}, BF 62 74 79 66 73 61 6D 70 6C 65 62 64 6E 83 85 62 33 34 62 33 36 62 33 31 62 31 33 62 32 30 83..68 bytes
+2023-10-09 12:45:50,578 7648 INFO  c.atos.coapserver.resources.Device - data
+2023-10-09 12:45:50,628 7698 INFO  c.atos.coapserver.resources.Device - Data POST Received - Encoded CBOR payload: bf6274796673616d706c6562646e8385623334623336623331623133623230836235386235306237388262323862313862696483623336623131623437627473623638ff, Decoded CBOR payload: {ty=sample, dn=[[34, 36, 31, 13, 20], [58, 50, 78], [28, 18]], id=[36, 11, 47], ts=68}
+2023-10-09 12:45:51,686 8756 INFO  c.a.c.client.ThingworxClient - POST Sent - Data: {"json":{"dn":[["34","36","31","13","20"],["58","50","78"],["28","18"]],"id":["36","11","47"],"ty":"sample","ts":"68"}} With response Code: 200

@@ -1,0 +1,17 @@
+version: '1'
+services:
+  coap-server:
+    image: coap-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - coap_server:/coap_server
+    ports:
+      - "5683:5683/udp"
+    expose:
+      - 5683
+
+volumes:
+  coap_server:
+

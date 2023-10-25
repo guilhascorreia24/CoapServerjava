@@ -1,0 +1,61 @@
+<configuration scan="true">
+    <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <charset>UTF-8</charset>
+            <Pattern>%d %-4relative %-5level %logger{35} - %msg%n</Pattern>
+        </encoder>
+        <springProfile name="prod">
+            <filter class="ch.qos.logback.classic.filter.LevelFilter">
+                <level>WARN</level>
+                <onMatch>DENY</onMatch>
+                <onMismatch>NEUTRAL</onMismatch>
+            </filter>
+        </springProfile>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- Change the file path to match your project structure -->
+        <file>logs/CoapLogs.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- Change the fileNamePattern to match your project structure -->
+            <fileNamePattern>logs/CoapLogs_%d{yyyy-MM-dd}.log</fileNamePattern>
+        </rollingPolicy>
+
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%d %-4relative %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+        <springProfile name="prod">
+            <filter class="ch.qos.logback.classic.filter.LevelFilter">
+                <level>WARN</level>
+                <onMatch>DENY</onMatch>
+                <onMismatch>NEUTRAL</onMismatch>
+            </filter>
+        </springProfile>
+    </appender>
+
+    <!--START XML CODE FOR PRODUCTION ENVIRONMENT-->
+    <springProfile name="prod">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>DENY</onMatch>
+            <onMismatch>NEUTRAL</onMismatch>
+        </filter>
+
+        <root level="INFO">
+            <appender-ref ref="consoleAppender" />
+            <appender-ref ref="FILE"/>
+        </root>
+    </springProfile>
+    <!--END XML CODE FOR PRODUCTION ENVIRONMENT-->
+
+    <!--START XML CODE FOR DEV ENVIRONMENT-->
+    <springProfile name="dev">
+        <root level="DEBUG">
+            <appender-ref ref="consoleAppender"/>
+            <appender-ref ref="FILE"/>
+        </root>
+    </springProfile>
+    <!--END XML CODE FOR DEV ENVIRONMENT-->
+
+</configuration>
